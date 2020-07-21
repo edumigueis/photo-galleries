@@ -6,90 +6,47 @@
       <a href="/#/galleries" class="bars-btn"><i class="fas fa-bars"></i></a>
     </div>
     <div class="masonry">
-      <figure class="item">
+      <figure class="item" v-for="(item, index) in photos" :key="index">
         <a href=""
           ><div class="image-mask">
-            <img
-              class="item-image"
-              src="https://images.pexels.com/photos/1176618/pexels-photo-1176618.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            /></div
-        ></a>
-        <figcaption>
-          <h5 class="caption">Gourgeous Image</h5>
-        </figcaption>
-      </figure>
-      <figure class="item">
-        <a href=""
-          ><div class="image-mask">
-            <img
-              class="item-image"
-              src="https://images.pexels.com/photos/91413/pexels-photo-91413.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt=""
-            /></div
-        ></a>
-        <figcaption>
-          <h5 class="caption">Gourgeous Image</h5>
-        </figcaption>
-      </figure>
-      <figure class="item">
-        <a href=""
-          ><div class="image-mask">
-            <img
-              class="item-image"
-              src="https://images.pexels.com/photos/772478/pexels-photo-772478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            /></div
-        ></a>
-        <figcaption>
-          <h5 class="caption">Gourgeous Image</h5>
-        </figcaption>
-      </figure>
-      <figure class="item">
-        <a href=""
-          ><div class="image-mask">
-            <img
-              class="item-image"
-              src="https://images.pexels.com/photos/772478/pexels-photo-772478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            /></div
-        ></a>
-        <figcaption>
-          <h5 class="caption">Gourgeous Image</h5>
-        </figcaption>
-      </figure>
-      <figure class="item">
-        <a href=""
-          ><div class="image-mask">
-            <img
-              class="item-image"
-              src="https://images.pexels.com/photos/772478/pexels-photo-772478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            /></div
-        ></a>
-        <figcaption>
-          <h5 class="caption">Gourgeous Image</h5>
-        </figcaption>
-      </figure>
-      <figure class="item">
-        <a href=""
-          ><div class="image-mask">
-            <img
-              class="item-image"
-              src="https://images.pexels.com/photos/1147124/pexels-photo-1147124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              alt=""
-            /></div
+            <img class="item-image" :src=item alt="" /></div
         ></a>
         <figcaption>
           <h5 class="caption">Gourgeous Image</h5>
         </figcaption>
       </figure>
     </div>
+    <my-footer />
   </main>
 </template>
 
 <script>
-export default {};
+import Footer from "../shared/footer/Footer.vue"
+var photos = [];
+export default {
+    components:{
+        "my-footer": Footer
+    },
+  data() {
+    return {
+      photos
+    };
+  },
+  mounted() {
+    this.randomImage(16);
+  },
+  methods: {
+    randomImage(amount) {
+      for (var i = 0; i < amount; i++) {
+          let randomSize = Math.floor(Math.random() * (1000 - 300) + 300) + "x" + Math.floor(Math.random() * (1000 - 200) + 200);
+        let randomNumber = Math.floor(Math.random() * 633);
+        photos.push(
+          `https://source.unsplash.com/collection/490175/${randomSize}/?sig=${randomNumber}`
+        );
+      }
+    }
+  }
+};
 </script>
 
 <style>

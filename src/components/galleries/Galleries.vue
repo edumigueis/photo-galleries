@@ -3,54 +3,94 @@
     <div class="wrapper">
       <div class="grid">
         <div class="block">
-          <div class="img-mask">
-            <img src="" alt="" />
-          </div>
-          <p>Grid</p>
+          <a href="/#/row-masonry">
+            <div class="img-mask">
+              <img
+                src="/src/assets/images/row-masonry.png"
+                alt="Row Masonry Gallery"
+              />
+            </div>
+            <p>Grid</p>
+            </a>
+          </a>
         </div>
         <div class="block">
+            <a href="/#/row-masonry">
           <div class="img-mask">
-            <img src="" alt="" />
+            <img
+              src="/src/assets/images/row-masonry.png"
+              alt="Row Masonry Gallery"
+            />
           </div>
           <p>Masonry</p>
+          </a>
+            </a>
         </div>
         <div class="block">
+            <a href="/#/row-masonry">
           <div class="img-mask">
-            <img src="" alt="" />
+            <img
+              src="/src/assets/images/row-masonry.png"
+              alt="Row Masonry Gallery"
+            />
           </div>
           <p>Row Masonry</p>
+          </a>
         </div>
         <div class="block">
+            <a href="/#/row-masonry">
           <div class="img-mask">
-            <img src="" alt="" />
+            <img
+              src="/src/assets/images/row-masonry.png"
+              alt="Row Masonry Gallery"
+            />
           </div>
           <p>Hexagon Grid</p>
+          </a>
         </div>
         <div class="block">
+            <a href="/#/row-masonry">
           <div class="img-mask">
-            <img src="" alt="" />
+            <img
+              src="/src/assets/images/row-masonry.png"
+              alt="Row Masonry Gallery"
+            />
           </div>
           <p>No Gutter Grid</p>
+          </a>
         </div>
         <div class="block">
+            <a href="/#/row-masonry">
           <div class="img-mask">
-            <img src="" alt="" />
+            <img
+              src="/src/assets/images/row-masonry.png"
+              alt="Row Masonry Gallery"
+            />
           </div>
           <p>No gutter masonry</p>
+          </a>
         </div>
         <div class="block">
+            <a href="/#/row-masonry">
           <div class="img-mask">
             <img src="" alt="" />
           </div>
           <p>Grid</p>
+            </a>
         </div>
       </div>
     </div>
+    <my-footer />
   </main>
 </template>
 
 <script>
-export default {};
+import Footer from "../shared/footer/Footer.vue"
+export default {
+    components:{
+        "my-footer": Footer
+    },
+};
 </script>
 
 <style scoped>
@@ -58,14 +98,22 @@ export default {};
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  grid-gap: 40px;
 }
 .wrapper {
   padding: 50px 100px;
+  background-color: #f0f0f0;
 }
 .block p {
   font-size: 16px;
   color: #676767;
   font-weight: 600;
   font-style: italic;
+}
+.img-mask img {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
 }
 </style>
