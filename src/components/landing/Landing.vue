@@ -3,16 +3,16 @@
     <div class="background">
        <div class="composition-wrapper">
           <div class="composition">
-            <img class="piece first" src="/src/assets/images/composition-1.jpg" alt="">
-            <img class="piece second" src="/src/assets/images/composition-2.jpg" alt="">
-            <img class="piece third" src="/src/assets/images/composition-3.jpg" alt="">
-            <video class="piece forth" src="/src/assets/images/composition-4.mp4" alt="" muted loop autoplay></video>
-            <video class="full-on" src="/src/assets/images/composition-4.mp4" alt="" muted loop autoplay></video>
+            <img class="piece second" src="/src/assets/images/composition-4.jpg" alt="">
+            <img class="piece third" src="/src/assets/images/composition-2.jpg" alt="">
+            <img class="piece first" src="/src/assets/images/composition-3.jpg" alt="">
+            
+            <img class="piece forth" src="/src/assets/images/composition-1.jpg" alt="">
           </div>
         </div>
       <div class="content-wrapper">
         <h1 class="main-title">Galleries that inspire.</h1>
-        <a href="/#/galleries">Check it out</a>
+        <a href="/#/galleries" class="btn">Check it out</a>
        
       </div>
     </div>
@@ -34,8 +34,12 @@ main{
   overflow: hidden;
 }
 .main-title{
-  font-size: 4rem;
+  font-size: 5.1vw;
+  font-weight: 700;
   color: #f9f9f9;
+  text-shadow: 2px 2px 4px #7f848d83;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 .composition-wrapper{
   z-index: -1;
@@ -46,54 +50,50 @@ main{
   left: 0;
   overflow: hidden;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .composition{
   position: relative;
   width: 100vw;
-  height: 800px;
-  max-width: 1480px;
+  height: 100vh;
   margin: 0 auto;
-}
-@media only screen and (min-width: 1900px) {
-  .composition{
-  height: 1300px;
-  max-width: 1900px;
-  margin: 0 auto;
-}
-}
-@media only screen and (min-width: 1600px) {
-  .composition{
-  height: 1000px;
-  max-width: 1600px;
-  margin: 0 auto;
-}
 }
 .piece{
   position: absolute;
+  min-height: 100%;
 }
 .piece.first{
-  right: 0;
-  height: 90%;
-  z-index: 1;
-}
-.piece.second{
   left: 0;
-  height: 70%;
-  z-index: 0;
+  width: 25vw;
 }
 .piece.third{
-  left: 270px;
-  height: 80%;
-  z-index: 0;
+  left: 24vw;
+  width: 30vw;
+}
+.piece.second{
+  right: 23vw;
+  filter: brightness(80%);
+    width: 28vw;
 }
 .piece.forth{
-  right: 350px;
-  height: 100%;
-  z-index: 4;
+  right: 0;
+  filter: brightness(90%);
+  width: 29vw;
 }
-.full-on{
-  width: 100%;
+.btn{
+  padding: 1rem 2rem;
+  background: #1f1f1f;
+  margin-top: 20px;
+  color: #f9f9f9;
+  font-weight: 700;
+  font-size: 18px;
 }
+  *{
+    box-sizing: border-box;
+    padding: 0;
+  }
 </style>
 <script>
 export default {
