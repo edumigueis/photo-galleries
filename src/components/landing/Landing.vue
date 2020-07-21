@@ -1,39 +1,54 @@
 <template>
   <main>
     <div class="background">
-       <div class="composition-wrapper">
-          <div class="composition">
-            <img class="piece second" src="/src/assets/images/composition-4.jpg" alt="">
-            <img class="piece third" src="/src/assets/images/composition-2.jpg" alt="">
-            <img class="piece first" src="/src/assets/images/composition-3.jpg" alt="">
-            
-            <img class="piece forth" src="/src/assets/images/composition-1.jpg" alt="">
-          </div>
+      <div class="composition-wrapper">
+        <div class="composition">
+          <img
+            class="piece second"
+            src="/src/assets/images/composition-4.jpg"
+            alt=""
+          />
+          <img
+            class="piece third"
+            src="/src/assets/images/composition-2.jpg"
+            alt=""
+          />
+          <img
+            class="piece first"
+            src="/src/assets/images/composition-3.jpg"
+            alt=""
+          />
+
+          <img
+            class="piece forth"
+            src="/src/assets/images/composition-1.jpg"
+            alt=""
+          />
         </div>
+      </div>
       <div class="content-wrapper">
         <h1 class="main-title">Galleries that inspire.</h1>
         <a href="/#/galleries" class="btn">Check it out</a>
-       
       </div>
     </div>
   </main>
 </template>
 <style scoped>
-.background-video{
+.background-video {
   width: 100%;
 }
-.content-wrapper{
+.content-wrapper {
   width: 100%;
   padding: 220px 120px;
   position: absolute;
   z-index: 3;
-  top:0;
+  top: 0;
 }
-main{
+main {
   height: 100vh;
   overflow: hidden;
 }
-.main-title{
+.main-title {
   font-size: 5.1vw;
   font-weight: 700;
   color: #f9f9f9;
@@ -41,7 +56,7 @@ main{
   margin-top: 10px;
   margin-bottom: 40px;
 }
-.composition-wrapper{
+.composition-wrapper {
   z-index: -1;
   position: absolute;
   left: 20vw;
@@ -54,35 +69,35 @@ main{
   align-items: center;
   justify-content: center;
 }
-.composition{
+.composition {
   position: relative;
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
 }
-.piece{
+.piece {
   position: absolute;
   min-height: 100%;
 }
-.piece.first{
+.piece.first {
   left: 0;
   width: 25vw;
 }
-.piece.third{
+.piece.third {
   left: 24vw;
   width: 30vw;
 }
-.piece.second{
+.piece.second {
   right: 23vw;
   filter: brightness(80%);
-    width: 28vw;
+  width: 28vw;
 }
-.piece.forth{
+.piece.forth {
   right: 0;
   filter: brightness(90%);
   width: 29vw;
 }
-.btn{
+.btn {
   padding: 1rem 2rem;
   background: #1f1f1f;
   margin-top: 20px;
@@ -90,10 +105,71 @@ main{
   font-weight: 700;
   font-size: 18px;
 }
-  *{
-    box-sizing: border-box;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  .piece.first {
+    display: none;
   }
+  .piece.third {
+    left: 0;
+    width: 35vw;
+  }
+  .piece.second {
+    right: 33vw;
+    filter: brightness(80%);
+    width: 33.5vw;
+  }
+  .piece.forth {
+    right: 0;
+    filter: brightness(90%);
+    width: 33.5vw;
+  }
+}
+@media screen and (max-width: 930px) {
+  .piece.third {
+    left: 0;
+    width: 55vw;
+  }
+  .piece.second {
+    display: none;
+  }
+  .piece.forth {
+    right: 0;
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 900px) and (min-height: 950px) {
+  .piece.first {
+    display: none;
+  }
+  .piece.third {
+    left: 0;
+    width: 35vw;
+  }
+  .piece.second {
+    right: 33vw;
+    filter: brightness(80%);
+    width: 33.5vw;
+  }
+  .piece.forth {
+    right: 0;
+    filter: brightness(90%);
+    width: 33.5vw;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) and (min-height: 900px) {
+  .piece.third {
+    left: -10vw;
+    width: 60vw;
+  }
+  .piece.forth {
+    right: -10vw;
+    width: 60vw;
+  }
+}
 </style>
 <script>
 export default {
