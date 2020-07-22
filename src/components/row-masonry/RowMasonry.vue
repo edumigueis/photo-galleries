@@ -49,7 +49,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .masonry {
   box-sizing: border-box;
   display: flex;

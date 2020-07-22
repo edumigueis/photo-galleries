@@ -7,18 +7,18 @@
             <div class="img-mask">
               <img
                 src="/src/assets/images/grid.png"
-                alt="Row Masonry Gallery"
+                alt="Grid Gallery"
               />
             </div>
             <p>Grid</p>
           </a>
         </div>
         <div class="block">
-          <a href="/#/row-masonry">
+          <a href="/#/masonry">
             <div class="img-mask">
               <img
-                src="/src/assets/images/row-masonry.png"
-                alt="Row Masonry Gallery"
+                src="/src/assets/images/masonry.png"
+                alt="Masonry Gallery"
               />
             </div>
             <p>Masonry</p>

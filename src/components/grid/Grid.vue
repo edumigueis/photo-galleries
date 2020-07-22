@@ -6,10 +6,10 @@
       <a href="/#/galleries" class="bars-btn"><i class="fas fa-bars"></i></a>
     </div>
     <div class="grid-wrapper">
-            <div class="grid">
-        <div class="block"  v-for="photo in photos" :key="photo">
+      <div class="grid">
+        <div class="block" v-for="photo in photos" :key="photo">
           <div class="image-mask">
-            <img :src=photo alt="">
+            <img :src="photo" alt="" />
           </div>
           <p class="description">Beautiful Image</p>
         </div>
@@ -18,33 +18,33 @@
   </main>
 </template>
 <style scoped>
-.grid-wrapper{
+.grid-wrapper {
   margin: 30px 70px;
 }
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   width: 100%;
 }
-.image-mask{
+.image-mask {
   width: 100%;
   overflow: hidden;
   height: 300px;
 }
-.image-mask img{
+.image-mask img {
   width: 100%;
   object-fit: cover;
   min-height: 100%;
 }
-.block .description{
+.block .description {
   font-size: 16px;
   color: #676767;
   font-weight: 600;
   font-style: italic;
   margin-top: 10px;
 }
-*{
+* {
   box-sizing: border-box;
 }
 .header {
@@ -84,12 +84,12 @@
 }
 </style>
 <script>
-import Footer from "../shared/footer/Footer.vue"
+import Footer from "../shared/footer/Footer.vue";
 var photos = [];
 export default {
-    components:{
-        "my-footer": Footer
-    },
+  components: {
+    "my-footer": Footer
+  },
   data() {
     return {
       photos
@@ -98,13 +98,16 @@ export default {
   mounted() {
     this.randomImage(12);
   },
-  destroyed(){
+  destroyed() {
     this.photos = [];
   },
   methods: {
     randomImage(amount) {
       for (var i = 0; i < amount; i++) {
-        let randomSize = Math.floor(Math.random() * (900 - 300) + 300) + "x" + Math.floor(Math.random() * (900 - 300) + 300);
+        let randomSize =
+          Math.floor(Math.random() * (900 - 300) + 300) +
+          "x" +
+          Math.floor(Math.random() * (900 - 300) + 300);
         let randomNumber = Math.floor(Math.random() * 633);
         photos.push(
           `https://source.unsplash.com/collection/490175/${randomSize}/?sig=${randomNumber}`
