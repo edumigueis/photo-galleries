@@ -1,5 +1,6 @@
 <template>
   <main>
+    <title>Row Masonry</title>
     <div class="header">
       <h1 class="main-title">Row Masonry</h1>
       <button class="copy-code btn">Copy Code</button>

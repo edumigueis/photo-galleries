@@ -1,5 +1,6 @@
 <template>
   <main>
+    <title>Photo Galleries</title>
     <div class="background">
       <div class="composition-wrapper">
         <div class="composition">

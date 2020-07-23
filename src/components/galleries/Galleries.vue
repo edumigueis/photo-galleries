@@ -1,5 +1,6 @@
 <template>
   <main class="full-page">
+    <title>Galleries</title>
     <div class="wrapper">
       <div class="grid">
         <div class="block">

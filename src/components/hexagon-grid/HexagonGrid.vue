@@ -1,5 +1,6 @@
 <template>
   <main>
+    <title>Hexagon Grid</title>
     <div class="header">
       <h1 class="main-title">Hexagon Grid</h1>
       <button class="copy-code btn">Copy Code</button>
