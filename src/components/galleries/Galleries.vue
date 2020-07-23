@@ -47,10 +47,10 @@
           </a>
         </div>
         <div class="block">
-          <a href="/#/row-masonry">
+          <a href="/#/no-gutter/grid">
             <div class="img-mask">
               <img
-                src="/src/assets/images/row-masonry.png"
+                src="/src/assets/images/grid-no-gutter.png"
                 alt="Row Masonry Gallery"
               />
             </div>
@@ -107,6 +107,12 @@ export default {
   color: #676767;
   font-weight: 600;
   font-style: italic;
+}
+.block{
+  transition: 0.2s all ease-in-out;
+}
+.block:hover{
+  transform: scale(1.02);
 }
 .img-mask{
   height: 240px;

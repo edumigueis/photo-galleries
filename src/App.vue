@@ -28,6 +28,7 @@ export default {
     overflow-x: hidden;
     width: 100%;
     font-family: 'Lato', sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
   .corpo{
     width: 100%;
