@@ -36,10 +36,10 @@
           </a>
         </div>
         <div class="block">
-          <a href="/#/row-masonry">
+          <a href="/#/hexagon-grid">
             <div class="img-mask">
               <img
-                src="/src/assets/images/row-masonry.png"
+                src="/src/assets/images/hexagon-grid.png"
                 alt="Row Masonry Gallery"
               />
             </div>
@@ -58,10 +58,10 @@
           </a>
         </div>
         <div class="block">
-          <a href="/#/row-masonry">
+          <a href="/#/no-gutter/masonry">
             <div class="img-mask">
               <img
-                src="/src/assets/images/row-masonry.png"
+                src="/src/assets/images/masonry-no-gutter.png"
                 alt="Row Masonry Gallery"
               />
             </div>
