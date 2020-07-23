@@ -128,7 +128,7 @@ main {
     width: 33.5vw;
   }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1100px) {
   .piece.third {
     left: 0;
     width: 55vw;
@@ -141,7 +141,36 @@ main {
     width: 45vw;
   }
 }
-@media screen and (max-width: 1400px) and (min-width: 900px) and (min-height: 950px) {
+@media screen and (max-width: 700px) {
+  .piece.third {
+    right: 0;
+    width: 100% !important;
+  }
+  .piece.second {
+    display: block;
+    height: 300px;
+    width: 200px;
+    bottom: 0;
+    right: 250px;
+    min-height: 200px !important;
+    z-index: 9;
+  }
+  .piece.forth {
+    right: 0;
+    width: 280px;
+    height: 400px;
+    min-height: 55% !important;
+    z-index: 7;
+    bottom: 0;
+  }
+  .content-wrapper{
+    padding: 220px 50px !important;
+  }
+  .main-title{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1400px) and (min-width: 1100px) and (min-height: 950px) {
   .piece.first {
     display: none;
   }
