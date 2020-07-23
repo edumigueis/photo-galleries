@@ -81,14 +81,14 @@ export default {
     margin-bottom: 60px !important;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 730px) {
   .masonry .item {
     width: 100%;
     margin-bottom: 60px;
     margin-top: 0 !important;
   }
   .image-mask {
-    max-width: 420px !important;
+    max-width: 100% !important;
   }
 }
 @media (max-width: 600px) {

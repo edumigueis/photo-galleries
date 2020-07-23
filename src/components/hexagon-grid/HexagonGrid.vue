@@ -93,6 +93,14 @@ img {
   margin-left: 20px !important;
   margin: 0;
 }
+@media only screen and (max-width: 750px) {
+  .hex {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 325px;
+}
+}
 </style>
 <script>
 import Footer from "../shared/footer/Footer.vue";

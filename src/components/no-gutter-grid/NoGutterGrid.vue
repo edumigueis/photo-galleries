@@ -12,9 +12,8 @@
             <img :src="photo" alt="" />
           </div>
           <div class="overlay">
-               <p class="description">Beautiful Image</p>
+            <p class="description">Beautiful Image</p>
           </div>
-         
         </div>
       </div>
     </div>
@@ -29,6 +28,16 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0;
   width: 100%;
+}
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
 .image-mask {
   width: 100%;
@@ -51,23 +60,23 @@
   position: absolute;
   bottom: 16px;
 }
-.block{
-    position: relative;
+.block {
+  position: relative;
 }
-.overlay{
-    height: 0;
-    background: #1f1f1faa;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: 0.3s height ease-in-out;
+.overlay {
+  height: 0;
+  background: #1f1f1faa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s height ease-in-out;
 }
-.block:hover > .overlay{
-    height: 300px;
+.block:hover > .overlay {
+  height: 300px;
 }
-.block:hover > .overlay > .description{
-    opacity: 1;
+.block:hover > .overlay > .description {
+  opacity: 1;
 }
 * {
   box-sizing: border-box;

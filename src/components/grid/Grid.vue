@@ -27,6 +27,16 @@
   grid-gap: 50px;
   width: 100%;
 }
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
 .image-mask {
   width: 100%;
   overflow: hidden;
