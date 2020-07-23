@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="full-page">
     <div class="wrapper">
       <div class="grid">
         <div class="block">
@@ -68,14 +68,14 @@
             <p>No gutter masonry</p>
           </a>
         </div>
-        <div class="block">
+        <!--<div class="block">
           <a href="/#/row-masonry">
             <div class="img-mask">
               <img src="" alt="" />
             </div>
             <p>Grid</p>
           </a>
-        </div>
+        </div>-->
       </div>
     </div>
     <my-footer />
@@ -98,9 +98,35 @@ export default {
   width: 100%;
   grid-gap: 40px;
 }
+@media only screen and (min-width: 701px) and (max-width: 950px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media only screen and (min-width: 1600px){
+  .img-mask{
+  height: 300px !important;
+}
+}
+@media only screen and (max-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media only screen and (max-width: 500px){
+.wrapper{
+  padding: 40px 40px !important;
+}
+}
 .wrapper {
   padding: 50px 100px;
+  
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.full-page{
   background-color: #f0f0f0;
+  min-height: 100vh;
 }
 .block p {
   font-size: 16px;

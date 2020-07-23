@@ -62,6 +62,19 @@
   margin: 40px 120px;
   height: 40px;
 }
+@media only screen and (min-width: 441px) and (max-width: 700px){
+  .header {
+  margin: 40px 70px;
+}
+}
+@media only screen and (max-width: 440px){
+  .header {
+  margin: 40px 30px;
+}
+.grid-wrapper{
+  margin: 30px 40px;
+}
+}
 .main-title {
   text-align: left;
   margin: 0;

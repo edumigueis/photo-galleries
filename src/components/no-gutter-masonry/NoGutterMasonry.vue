@@ -46,6 +46,30 @@
   column-count: 1 !important;
 }
 }
+@media only screen and (min-width: 441px) and (max-width: 700px){
+  .header {
+  margin: 40px 70px !important;
+}
+}
+@media only screen and (max-width: 470px){
+  .header {
+  margin: 40px 30px !important;
+}
+.masonry-wrapper{
+  margin: 30px 40px;
+}
+}
+@media only screen and (max-width: 400px){
+  .header {
+  flex-wrap: wrap;
+  height: fit-content !important;
+  align-items: center;
+  justify-content: center;
+}
+.main-title{
+  width: 100%;
+}
+}
 .masonry{
   column-count: 3;
   column-gap: 0;
