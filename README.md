@@ -21,7 +21,27 @@ All the galleries in this project can be coppied, but the copyright notice in al
 
 ## Using
 
-After downloading the project folder, you can go into a console and cd the main project folder:
+If you don't want to download the project, you can acces the files through GitHub and copy the css inside the style tag. The html is inside the <template> tag. Just remove the v-for and the :key attributes from the inner tag of the gallery wrapper and copy that tag many times. Like so:
+```sh
+<div class="grid-wrapper">
+      <div class="grid">
+        <div class="block">
+          <div class="image-mask">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=708&q=80" alt="" />
+          </div>
+          <p class="description">Beautiful Image</p>
+        </div>
+        <div class="block">
+          <div class="image-mask">
+            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=708&q=80" alt="" />
+          </div>
+          <p class="description">Beautiful Image</p>
+        </div>
+        ...
+      </div>
+    </div>
+```
+After downloading the project, you can go into a console and cd the main project folder:
 
 ```sh
 cd photo-galleries
