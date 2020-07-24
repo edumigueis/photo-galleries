@@ -10,13 +10,13 @@
 
 [Link](https://google.com)
 All the galleries in this project can be coppied, but the copyright notice in all the files must be maintained, as states the LICENSE. Check out pictures of the project:
->Row Masonry
+## Row Masonry
 ![](./src/assets/images/row-masonry.png)
->Masonry:
+## Masonry:
 ![](./src/assets/images/masonry.png)
->Grid:
+## Grid:
 ![](./src/assets/images/grid.png)
->No Gutter Masonry
+## No Gutter Masonry
 ![](./src/assets/images/masonry-no-gutter.png)
 
 ## Instalação
