@@ -12,6 +12,9 @@
 All the galleries in this project can be coppied, but the copyright notice in all the files must be maintained, as states the LICENSE. Check out pictures of the project:
 
 ![](./src/assets/images/row-masonry.png)
+![](./src/assets/images/masonry.png)
+![](./src/assets/images/grid.png)
+![](./src/assets/images/row-masonry.png)
 
 ## Instalação
 
