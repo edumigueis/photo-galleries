@@ -22,7 +22,7 @@ All the galleries in this project can be coppied, but the copyright notice in al
 ## Using
 
 If you don't want to download the project, you can access the files through GitHub and copy the css inside the style tag. The html is inside the <template> tag. Just remove the v-for and the :key attributes from the inner tag of the gallery wrapper and copy that tag many times. Like so:
-```sh
+```html
 <div class="grid-wrapper">
       <div class="grid">
         <div class="block">
