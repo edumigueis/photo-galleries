@@ -9,7 +9,7 @@
 - Row Masonry
 
 [Link](https://google.com)
-All the galleries in this project can be coppied, but the copyright notice in all the files must be maintained, as states the LICENSE. Check out pictures of the project:
+All the galleries in this project can be coppied, but the copyright notice in all the files must be maintained, as states the LICENSE. All images provided by Unsplash. Check out pictures of the project:
 ## Row Masonry
 ![](./src/assets/images/row-masonry.png)
 ## Masonry:
@@ -19,18 +19,18 @@ All the galleries in this project can be coppied, but the copyright notice in al
 ## No Gutter Masonry
 ![](./src/assets/images/masonry-no-gutter.png)
 
-## Instalação
+## Using
 
-OS X & Linux:
+After downloading the project folder, you can go into a console and cd the main project folder:
 
 ```sh
-npm install my-crazy-module --save
+cd photo-galleries
 ```
 
-Windows:
+And, then:
 
 ```sh
-edit autoexec.bat
+npm run dev
 ```
 
 ## Exemplo de uso
