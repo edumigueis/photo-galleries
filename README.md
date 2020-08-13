@@ -9,7 +9,6 @@
 - Hexagon Grid
 - Row Masonry
 
-[Link](https://google.com)
 All the galleries in this project can be coppied, but the copyright notice in all the files must be maintained, as states the LICENSE. All images provided by Unsplash. Check out pictures of the project:
 
 ## Row Masonry

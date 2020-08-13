@@ -38,4 +38,7 @@ export default {
   a{
     text-decoration: none;
   }
+  button a {
+    color: #fefefe;
+  }
 </style>

@@ -3,7 +3,7 @@
     <title>Hexagon Grid</title>
     <div class="header">
       <h1 class="main-title">Hexagon Grid</h1>
-      <button class="copy-code btn">Copy Code</button>
+      <button class="copy-code btn"><a href="https://github.com/edumigueis/photo-galleries" target="_blank" rel="noopener noreferrer">Check Repo</a></button>
       <a href="/#/galleries" class="bars-btn"><i class="fas fa-bars"></i></a>
     </div>
     <section class="hexagon-gallery">
