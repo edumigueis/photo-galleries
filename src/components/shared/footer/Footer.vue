@@ -1,3 +1,6 @@
+<!--
+  Copyright (c) Eduardo Migueis 2020
+-->
 <template>
   <div id="site-footer">
     <!-- Site footer -->

@@ -1,3 +1,6 @@
+<!--
+  Copyright (c) Eduardo Migueis 2020
+-->
 <template>
   <div id="not-found-container">
     <title>Not Found</title>

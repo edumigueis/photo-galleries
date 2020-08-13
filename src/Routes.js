@@ -1,3 +1,6 @@
+/*
+  Copyright (c) Eduardo Migueis 2020
+*/
 import Landing from './components/landing/Landing.vue';
 import NotFound from './components/not-found/NotFound.vue';
 import Galleries from './components/galleries/Galleries.vue';

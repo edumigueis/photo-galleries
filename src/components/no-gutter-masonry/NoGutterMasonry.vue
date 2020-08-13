@@ -1,3 +1,6 @@
+<!--
+  Copyright (c) Eduardo Migueis 2020
+-->
 <template>
   <main>
     <title>No Gutter Masonry</title>

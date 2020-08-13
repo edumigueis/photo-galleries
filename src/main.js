@@ -1,3 +1,6 @@
+/*
+  Copyright (c) Eduardo Migueis 2020
+*/
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
