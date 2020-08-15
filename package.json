@@ -12,8 +12,10 @@
   "dependencies": {
     "cli": "^1.0.1",
     "clipboard": "^2.0.6",
+    "elliptic": "^6.5.3",
     "express-session": "^1.17.1",
     "jquery": "^3.5.1",
+    "mem": "^6.1.0",
     "modules": "^0.4.0",
     "node": "^14.0.0",
     "save": "^2.4.0",
@@ -23,7 +25,8 @@
     "vue-router": "^3.1.6",
     "vue-session": "^1.0.0",
     "vue-upload-image": "^1.1.5",
-    "vuex": "^3.2.0"
+    "vuex": "^3.2.0",
+    "websocket-extensions": "^0.1.4"
   },
   "browserslist": [
     "> 1%",
@@ -44,6 +47,6 @@
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^3.11.0"
   }
 }
