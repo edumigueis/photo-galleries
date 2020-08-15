@@ -73,6 +73,6 @@ npm run dev
 
 Creator: Eduardo Migueis
 
-Distributed under the MIT LICENSE. See `LICENSE` for more informaton.
+Distributed under the APACHE 2.0 LICENSE. See `LICENSE` for more informaton.
 
 [https://github.com/edumigueis/photo-galleries](https://github.com/edumigueis)
