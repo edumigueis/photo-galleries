@@ -57,13 +57,14 @@ If you don't want to download the project, you can access the files through GitH
 </div>
 ```
 
-If you want to download the entire project. Follow the following steps. After downloading the project, you can go into a console and cd the main project folder:
+If you want to download the entire project. Follow the following steps. After downloading the project, you can go into a console and cd the main project folder. Then, you have to install the dependencies:
 
 ```sh
 cd photo-galleries
+npm install
 ```
 
-And, then:
+And, then run like so:
 
 ```sh
 npm run dev
