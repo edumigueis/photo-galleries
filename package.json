@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
@@ -15,17 +16,18 @@
     "elliptic": "^6.5.3",
     "express-session": "^1.17.1",
     "jquery": "^3.5.1",
-    "mem": "^6.1.0",
+    "js-yaml": "^3.14.0",
+    "mem": "^6.1.1",
     "modules": "^0.4.0",
-    "node": "^14.0.0",
+    "node": "^14.10.1",
     "save": "^2.4.0",
-    "vue": "^2.6.11",
+    "vue": "^2.6.12",
     "vue-page-transition": "^0.2.2",
     "vue-resource": "^1.5.1",
-    "vue-router": "^3.1.6",
+    "vue-router": "^3.4.3",
     "vue-session": "^1.0.0",
     "vue-upload-image": "^1.1.5",
-    "vuex": "^3.2.0",
+    "vuex": "^3.5.1",
     "websocket-extensions": "^0.1.4"
   },
   "browserslist": [
@@ -42,11 +44,16 @@
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.4",
+    "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
-    "sass-loader": "^9.0.2",
+    "sass-loader": "^9.0.3",
     "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.0"
+  },
+  "resolutions": {
+    "minimist": "^1.2.5",
+    "mkdirp": "^1.0.4"
   }
 }
