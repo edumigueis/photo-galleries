@@ -1,9 +1,9 @@
 {
-  "name": "Portfolio",
+  "name": "photo-galleries",
   "description": "A Vue.js project",
   "version": "1.0.0",
   "author": "Eduardo de Almeida Migueis",
-  "license": "MIT",
+  "license": "Apache 2.0",
   "private": true,
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
@@ -28,6 +28,7 @@
     "vue-session": "^1.0.0",
     "vue-upload-image": "^1.1.5",
     "vuex": "^3.5.1",
+    "webpack-cli": "^3.3.12",
     "websocket-extensions": "^0.1.4"
   },
   "browserslist": [
@@ -47,7 +48,7 @@
     "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.3",
-    "vue-loader": "^13.0.5",
+    "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.0"
