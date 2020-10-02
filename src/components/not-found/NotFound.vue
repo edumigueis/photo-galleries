@@ -10,8 +10,7 @@
     </header>
     <div class="exp-wrapper">
       <p class="explanation">
-        O que você está procurando não está aqui. Esta página não existe, foi
-        apagada, teve seu nome alterado ou está indisponível.
+        What you are looking for is not here. This may have been deleted or is unavailable.
       </p>
     </div>
   </div>
