@@ -20,7 +20,7 @@
     "mem": "^6.1.1",
     "modules": "^0.4.0",
     "node": "^14.11.0",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "save": "^2.4.0",
     "vue": "^2.6.12",
     "vue-page-transition": "^0.2.2",
